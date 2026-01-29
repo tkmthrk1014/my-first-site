@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="竹本ひろか先生のポートフォリオ。特別支援学級での教育活動や趣味をご紹介します。">
+    <title>竹本先生のポートフォリオ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="portfolio-container">
+        <header>
+            <h1>竹本先生のポートフォリオ</h1>
+            <p class="subtitle">Education & Communication</p>
+        </header>
+
+        <main class="profile-section">
+            <div class="profile-image-container">
+                <div class="profile-placeholder" id="profile-icon">
+                    🎓
+                </div>
+            </div>
+
+            <div class="info-content">
+                <div class="info-group">
+                    <span class="label">お名前</span>
+                    <div class="value">竹本 ひろか (Hiroka Takemoto)</div>
+                </div>
+
+                <div class="info-group">
+                    <span class="label">専門・所属</span>
+                    <div class="value">特別支援学級 教諭</div>
+                </div>
+
+                <div class="info-group">
+                    <span class="label">趣味・特技</span>
+                    <div class="value">
+                        飲み会の司会、場を盛り上げること
+                        <div class="badge-container">
+                            <span class="badge">司会</span>
+                            <span class="badge">コミュニケーション</span>
+                            <span class="badge">イベント企画</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-group">
+                    <span class="label">自己紹介</span>
+                    <p class="value">
+                        特別支援教育を通じて、一人ひとりの個性を大切にした指導を心掛けています。
+                        学校行事や親睦会では、司会として皆さんに楽しんでいただける場作りをすることに情熱を注いでいます！
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Hiroka Takemoto. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple subtle animation on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const icon = document.getElementById('profile-icon');
+            icon.style.transition = 'transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            setTimeout(() => {
+                icon.style.transform = 'scale(1.1)';
+                setTimeout(() => {
+                    icon.style.transform = 'scale(1)';
+                }, 500);
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
